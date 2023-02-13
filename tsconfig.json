@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "lib": ["es2015"],
+    "paths": {
+      "@todo/*": ["src/todo/*"],
+      "@shared/*": ["src/shared/*"],
+      "@user/*": ["src/users/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
