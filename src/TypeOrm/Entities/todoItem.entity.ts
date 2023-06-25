@@ -17,6 +17,8 @@ export class TodoItemEntity {
   @CreateDateColumn()
   createdOn?: Date;
 
-  @ManyToOne(type => TodoEntity, todo => todo.todoItems)
+  @ManyToOne(type => TodoEntity, todo => todo.todoItems,{
+    onDelete: 'CASCADE'
+  })
   todo?: TodoEntity;
 }

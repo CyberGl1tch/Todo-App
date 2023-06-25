@@ -11,15 +11,18 @@ import {
 import { UserEntity } from './user.entity';
 @Entity({schema: "todo"})
 export class TodoEntity {
-  @PrimaryGeneratedColumn('uuid') id: string;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
+
   @Column({ type: 'varchar', nullable: false })
   name: string;
+
   @Column({ type: 'text', nullable: true })
   description?: string;
 
-
   @CreateDateColumn()
   createdOn?: Date;
+
   @CreateDateColumn()
   updatedOn?: Date;
 

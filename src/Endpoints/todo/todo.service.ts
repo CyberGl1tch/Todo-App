@@ -3,8 +3,6 @@ import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { TodoEntity } from '../../TypeOrm/Entities/todo.entity';
 import { TodoDto } from './dto/todo.dto';
 import { CreateTodoDto } from './dto/todo.create.dto';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
 import { UserDto } from '../users/dto/user.dto';
 import { UsersService } from '../users/users.service';
 import { todoRepository } from '../../TypeOrm/Repositories/todo.repository';
